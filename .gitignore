@@ -1,0 +1,29 @@
+# Generated local reports
+reports/
+**/claude-env-report-*.txt
+**/claude-env-report-*.md
+**/claude-env-report-*.json
+*.log
+*.tmp
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+settings.local.json
+auth.json
+cookies*.txt
+cookies*.json
+
+# Local editor/cache files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.pyc
