@@ -7,7 +7,6 @@ Windows 环境复核脚本及配套 130 问通用清单。作者：司徒K。
 | 平台 | 当前内容 | 验证情况 |
 |---|---|---|
 | Windows | PowerShell 自检脚本，对应第 1–108 问 | Windows PowerShell 5.1 与 PowerShell 7 的离线合成测试通过；不代表真实环境全部验收 |
-| macOS | 轻量自检设计，对应第 109–130 问 | 尚未实现或做 Mac 真机验收，参见 [Mac 方案](macos/README.md) |
 
 ## Windows 使用
 
@@ -31,7 +30,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\windows\claude-env-che
 
 ```text
 windows/                 Windows 自检脚本
-macos/                   Mac 自检设计与后续实现位置
 docs/checklist.md        完整 130 问复核清单
 docs/windows.md          Windows 参数、输出和检查范围
 tests/                   离线测试与运行说明
@@ -45,7 +43,6 @@ CHANGELOG.md             版本记录
 - 检查逻辑与题号保持对应。调整题目顺序时，正文、清单和报告展示同步更新。
 - INFO、WARN、UNKNOWN、MANUAL 各有含义；配置存在不等于有效，连接成功不等于账号可用。
 - 不提交真实报告、代理地址、节点、配置、邮箱、凭据、个人路径或私人文件。忽略规则只是防误提交措施，提交前仍需看暂存内容。
-- Mac 有脚本后，先在测试环境验证，再由本人在实际 Mac 上验收；测试记录分别标明合成测试、系统检查和应用功能测试。
 - 公有仓库可供文章读者查看源码和下载。使用前先阅读说明与源码，不把代码更新视为本机检查已经完成。
 
 沿用现有 MIT 许可证，见 [LICENSE](LICENSE)。
